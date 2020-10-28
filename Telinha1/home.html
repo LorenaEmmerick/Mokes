@@ -1,0 +1,274 @@
+<!doctype html>
+
+<html lang="en">
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+  integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
+
+<head>
+
+  <title> Reajuste Salarial </title>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+
+        <a class="navbar-brand" id="logo" href="https://www.google.com/">
+          <img src="imagens/imgGitHub.png" title="Cat" id="logo"></img>
+        </a>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="https://www.google.com/"> link1 <span class="sr-only"></span></a></li>
+          <li><a href="https://www.google.com/"> link2 </a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="forme-group">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <span class="input-group-btn">
+                  <button class="btn btn-info glyphicon glyphicon-search" type="button"></button>
+                </span></div>
+            </div>
+
+          </form>
+
+          <!-- menu dropdown -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Sr. Gestor <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"> <span class="glyphicon glyphicon-cog"></span> Configuração </a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Perfil </span></li>
+              <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> Ajuda </a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#"><span class="glyphicon glyphicon-off"></span> Sair </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#reajuste" aria-controls="reajuste" role="tab"
+          data-toggle="tab">Reajuste </a></li>
+      <li role="presentation"><a href="#cadastro" aria-controls="cadastro" role="tab" data-toggle="tab">Cadastro
+          Funcionário </a></li>
+      <li role="presentation"><a href="#aba3" aria-controls="aba3" role="tab" data-toggle="tab"> Aba 3 </a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active container" id="reajuste">
+        <form class="row">
+          <div class="container page-header">
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlInput1"> Data do reajuste </label>
+              <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="dd/mm/aaaa">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlInput1"> Valor do reajuste </label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="R$">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlSelect1"> Setores </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option> Administrativo </option>
+                <option> Recursos Humanos </option>
+                <option> Desenvolvimento </option>
+                <option> Marketing </option>
+                <option> Suporte </option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlSelect1"> Colaborador </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option> Ana </option>
+                <option> Beatriz </option>
+                <option> Carlos </option>
+                <option> Matheus </option>
+                <option> Julio </option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlSelect1"> Cargos </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option> Técnico em qualidade </option>
+                <option> Desenvolvedor </option>
+                <option> Supervisor </option>
+                <option> Gerente </option>
+                <option> Designer Gráfico </option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="exampleFormControlSelect1"> Grau de experiência </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option> Aprendiz </option>
+                <option> Junior </option>
+                <option> Pleno </option>
+                <option> Sênior </option>
+              </select>
+            </div>
+
+            <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-plus"></span>Adicionar</button>
+            <div class="page-header"></div>
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th> Data </th>
+                    <th> Valor do reajuste </th>
+                    <th> Setores </th>
+                    <th> Colaboadores </th>
+                    <th> Configurações </th>
+                  </tr>
+                </thead>
+                <tbody class="table">
+                  <tr>
+                    <th scope="row"> 10/10/2019 </th>
+                    <td> 80,00 </td>
+                    <td> Administrativo </td>
+                    <td> Ana e Beatriz </td>
+                    <td>
+                      <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                          <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+                        </button>
+                        <button type="button" class="btn btn-info">
+                          <ispan class="glyphicon glyphicon-remove"></ispan>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> 10/10/2019 </th>
+                    <td> 120,00 </td>
+                    <td> Desenvolvimento </td>
+                    <td> Julio </td>
+                    <td>
+                      <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                              <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+                            </button>
+                        <button type="button" class="btn btn-info">
+                          <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"> 10/10/2019 </th>
+                    <td> 150,00 </td>
+                    <td> Recursos Humanos </td>
+                    <td> Carlos </td>
+                    <td>
+                      <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                              <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+                            </button>
+                        <button type="button" class="btn btn-info">
+                          <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row"> 10/10/2019 </th>
+                    <td> 125,00 </td>
+                    <td> Desenvolvimento </td>
+                    <td> Matheus </td>
+                    <td>
+
+                      <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                              <span class="glyphicon glyphicon glyphicon-eye-open"></span>
+                            </button>
+                        <button type="button" class="btn btn-info">
+                          <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                      </div>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"> Modal Visualizar </h4>
+                  </div>
+                  <div class="modal-body">
+                    Mostrando o documento completo
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                      <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-info " type="submit"> Salvar</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Outras abas -->
+      <div role="tabpanel" class="tab-pane container page-header" id="cadastro"> informações 2 </div>
+      <div role="tabpanel" class="tab-pane container page-header" id="aba3"> informações 3 </div>
+
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>

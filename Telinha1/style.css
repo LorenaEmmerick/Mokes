@@ -1,0 +1,24 @@
+#logo{
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+.input{
+    width: 300px;
+    display: inline-block;
+}
+
+.page-header {
+    padding-bottom: 9px;
+}
+
+.btn-group {
+    width: 200px;
+
+}
+
+#table {
+    
+    text-align: left;
+}
+
